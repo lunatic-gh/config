@@ -1,0 +1,10 @@
+plugins {
+    id 'java'
+}
+
+group = 'de.chloedev'
+version = '1.0.0'
+
+base {
+    archivesName = "config"
+}

@@ -8,6 +8,7 @@
 2. [Features](#features)
 3. [Installation](#installation)
 4. [Examples](#examples)
+5. [Contributing](#contributing)
 
 ---
 
@@ -35,18 +36,18 @@ It makes reading and writing data to and from different data formats as simple a
 ```xml
 
 <repositories>
-  <repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-  </repository>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
 </repositories>
 
 <dependencies>
-  <dependency>
+<dependency>
     <groupId>com.github.lunatic-gh</groupId>
     <artifactId>config</artifactId>
     <version>VERSION</version>
-  </dependency>
+</dependency>
 </dependencies>
 
 
@@ -67,3 +68,12 @@ dependencies {
 ## Examples
 
 For usage examples, see the "examples" directory.
+
+## Contributing
+
+Contributions in form of Pull Requests are very appreciated.
+
+However, since this Project is Public-Domain, your Pull Requests will become too.
+
+You clearly accept that all Code Contributions become part of the public domain, and you will not try to cause a
+wildfire because you suddenly decided otherwise.

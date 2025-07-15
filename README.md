@@ -28,20 +28,40 @@ It makes reading and writing data to and from different data formats as simple a
 
 ## Installation
 
+#### See the repo-tags for the version id's
+
 ### Maven
 
 ```xml
 
-TODO
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+
+<dependencies>
+  <dependency>
+    <groupId>com.github.lunatic-gh</groupId>
+    <artifactId>config</artifactId>
+    <version>VERSION</version>
+  </dependency>
+</dependencies>
+
 
 ```
 
 ### Gradle
 
 ```
+repositories {
+  maven { url 'https://jitpack.io' }
+}
 
-TODO
-
+dependencies {
+  implementation 'com.github.lunatic-gh:config:VERSION'
+}
 ```
 
 ## Examples

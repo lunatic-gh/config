@@ -5,10 +5,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on:
-      - ubuntu-latest
-      - windows-latest
+  build-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: 17
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+      - name: Build with Gradle
+        run: ./gradlew build
+
+  build-windows:
+    runs-on: windows-latest
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
